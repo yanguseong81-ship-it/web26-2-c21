@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>1selector_tagidclass</title>
+    <style>
+           /* *{color:aqua} 
+            h1{color:red}
+             p{color:blue}
+
+            h1,p{color:yellowgreen} */
+          #header{
+            width: 800px; margin: 0 auto;
+            background: red
+          }
+         #wrap{
+            width: 800px; margin: 0 auto;
+            overflow: hidden;
+         }
+         #aside{
+            width: 200px; float: left;
+            background: blue
+         }
+         #content{
+            width: 600px; float: left;
+            background: green
+         }
+         #rint{color: red}
+
+         /* .select{color:orange} */
+         li.select {color:aqua;}
+
+            
+         /* .item {color:red} 
+         .header {background-color: blue;}*/
+    </style>
+</head>
+<body>
+    <!--id속성을 중복 사용하면 해당 id속성을 표시한 모든 태그에 스타일이 적용됨
+    하지만 문제 발생 가능성 높음 ==>class -->
+    <h2>1. 전체 선택자</h2>
+    <h2>2. 태그선택자</h2>
+    <h2>3. 아이디 선택자</h2>
+<hr>
+
+<h1 class="item header">동해물과 백두산이</h1>
+<hr>
+<ul>
+    <li class="select">사과</li>
+    <li>바나나</li>
+    <li>오렌지</li>
+    <li>감</li>
+</ul>
+
+
+<hr>
+<div id="header">
+    <h1>#header 태그</h1>
+</div>
+<div id="wrap">
+    <div id="aside"
+    <h1>#aside 태그</h1>
+</div>
+<div id="content">
+    <h1>#content 태그</h1>
+</div>
+<hr>
+
+<h1> 제목 글자</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+</body>
+</html>

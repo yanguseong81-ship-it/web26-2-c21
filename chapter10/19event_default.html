@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traditional Event - Default Event</title>
+    <script>
+        // 이벤트를 연결
+        window.onload = function() {
+            // 문서 객체를 선책
+            let button = document.getElementById('button');
+
+            // 이벤트를 연결
+            button.onclick = function() {
+                // 기본 이벤트 제거
+                return false;
+            };
+        };
+    </script>
+
    
 </head>
 
